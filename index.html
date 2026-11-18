@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>照合ページへ移動します</title>
+<script>
+var id = new URLSearchParams(location.search).get('id') || '';
+var base = 'https://script.google.com/macros/s/AKfycbwWIvffPxypUydaslJR1qpIhveKkeAyx9my83fXkE0l1FSr6Hm65wUfKGrzQchsK7U5Zg/exec';
+location.replace(id ? base + '?id=' + encodeURIComponent(id) : base);
+</script>
+</head>
+<body>
+<p>照合ページへ移動します。自動で移動しない場合は<a href="https://script.google.com/macros/s/AKfycbwWIvffPxypUydaslJR1qpIhveKkeAyx9my83fXkE0l1FSr6Hm65wUfKGrzQchsK7U5Zg/exec">こちら</a>を押してください。</p>
+</body>
+</html>
